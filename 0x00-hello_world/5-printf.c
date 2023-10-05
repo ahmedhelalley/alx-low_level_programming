@@ -5,12 +5,12 @@
  *
  * Description: Here is some description for the program
  *
- * Return 0 on success
+ * Return: 0 on success
 */
 
-int main(){
-
-    printf("with proper grammar, but the outcome is a piece of art,");
-    return (0);
+int main(void)
+{
+printf("with proper grammar, but the outcome is a piece of art,");
+return (0);
 }
 
