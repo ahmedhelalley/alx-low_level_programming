@@ -5,17 +5,11 @@
  *
  * Description: Here is some description for the program
  *
- * Return 0 on success
+ * Return: 0 on success
 */
 
-int main(){
-
-
-
-
-
-
+int main(void)
+{
 
 return (0);
 }
-
