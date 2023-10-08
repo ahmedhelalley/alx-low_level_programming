@@ -10,6 +10,7 @@
 
 int main(void)
 {
+char ch = 'a';
 int dec = 0;
 
 while (dec <= 9)
@@ -17,8 +18,6 @@ while (dec <= 9)
 	putchar(dec + 48);
 	dec++;
 }
-char ch = 'a';
-
 while (ch < 'f')
 {
 	putchar(ch);
