@@ -18,7 +18,7 @@ while (dec <= 9)
 	putchar(dec + 48);
 	dec++;
 }
-while (ch < 'f')
+while (ch <= 'f')
 {
 	putchar(ch);
 	ch++;
