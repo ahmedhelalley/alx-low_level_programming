@@ -2,7 +2,7 @@
 /**
  * print_square - slnv nksnvk nnfvn nng
  * @size: jdnvnsnvkdv kdfnlkv
- * Return: djfijd fmdvo djfg
+ * Return: 0 on success
 */
 
 void print_square(int size)
