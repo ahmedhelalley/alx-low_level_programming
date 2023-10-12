@@ -10,14 +10,14 @@ void print_diagonal(int n)
 	int line, space;
 
 	if (n <= 0)
-		putchar('\n');
+		_putchar('\n');
 	else
 	{
 		for (line = 1; line <= n; line++)
 		{
 			for (space = 1; space <= line; space++)
-				putchar(92);
-			putchar('\n');
+				_putchar(92);
+			_putchar('\n');
 		}
 	}
 }
