@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
  * print_diagonal - kjngjnvsjd sdnfv nsd
  * @n: lksdnf sdknf dknf
 */
+
 void print_diagonal(int n)
 {
 	int line, space;
@@ -14,9 +16,7 @@ void print_diagonal(int n)
 		for (line = 1; line <= n; line++)
 		{
 			for (space = 1; space <= line; space++)
-			{
 				_putchar(' ');
-			}
 			_putchar(92);
 			_putchar('\n');
 		}
