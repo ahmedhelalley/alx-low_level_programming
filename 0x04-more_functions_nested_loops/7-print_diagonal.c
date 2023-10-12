@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagonal - kjngjnvsjd sdnfv nsd
@@ -10,15 +10,15 @@ void print_diagonal(int n)
 	int line, space;
 
 	if (n <= 0)
-		_putchar('\n');
+		putchar('\n');
 	else
 	{
 		for (line = 1; line <= n; line++)
 		{
 			for (space = 1; space <= line; space++)
-				_putchar(' ');
-			_putchar(92);
-			_putchar('\n');
+				putchar(' ');
+			putchar(92);
+			putchar('\n');
 		}
 	}
 }
