@@ -5,6 +5,7 @@
 */
 void puts_half(char *str)
 {
+	int i;
 	int start_index;
 	int length = 0;
 	char *current = str;
