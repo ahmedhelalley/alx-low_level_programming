@@ -5,15 +5,23 @@
 */
 void puts_half(char *str)
 {
-	int i;
+	int start_index;
+	int length = 0;
+	char *current = str;
 
-	for (i = 0; str[i] != 0; i++)
-		;
-
-	i++;
-	for (i /= 2; str[i] != '0'; i++)
+	while (*current != '\0')
 	{
-		_putchar(str[i]);
+		length++;
+		current++;
 	}
-	_putchar('\n');
+	if (length % 2 == 0)
+		start_index = length / 2;
+	else
+		start_index = (length - 1) / 2;
+	for (i = start_index; str[i] != '\0'; i++)
+	{
+		putchar(str[i]);
+	}
+	putchar('\n');
+
 }
