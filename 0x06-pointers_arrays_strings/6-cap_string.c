@@ -30,13 +30,13 @@ int isLower(char c)
 char *cap_string(char *s)
 {
 	char *ptr = s;
-	int foundDelimiter = 0;
+	int foundDelimiter = 1;
 
 	while (*s)
 	{
 		if (isDelimiter(*s))
 			foundDelimiter = 1;
-		else if (isLower && foundDelimiter)
+		else if (isLower(*s) && foundDelimiter)
 		{
 			*s -= 32;
 			foundDelimiter = 0;
