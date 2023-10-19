@@ -6,6 +6,7 @@
 */
 int isDelimiter(char c)
 {
+	int i;
 	char delimiters[] = "\n\t ,;.!?\"(){}";
 
 	for (i = 0; i < 12; i++)
