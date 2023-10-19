@@ -30,7 +30,7 @@ int isLower(char c)
 char *cap_string(char *s)
 {
 	char *ptr = s;
-	bool foundDelimiter = false;
+	int foundDelimiter = 0;
 
 	while (*s)
 	{
