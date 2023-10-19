@@ -1,0 +1,17 @@
+#include "main.h"
+/**
+ * *string_toupper - odisv oiodisdvoij oisfvi
+ * @str: dsvsjnvondfnv fsge
+ * Return: str
+*/
+char *string_toupper(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (i >= 97 && i <= 122)
+			str[i] = str[i] - 32;
+	}
+	return (str);
+}
