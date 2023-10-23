@@ -1,4 +1,4 @@
-#included "main.h"
+#include "main.h"
 /**
  * *_strstr - sln hsz oihsz iohxc oic zxvoihh
  * @haystack: lksdn lxvkc jiocjv oicjvio
@@ -7,11 +7,6 @@
 */
 char *_strstr(char *haystack, char *needle)
 	{
-	if (haystack == NULL || needle == NULL)
-	{
-	return (NULL);
-	}
-
 	char *h, *n;
 
 	if (*needle == '\0')
@@ -38,5 +33,5 @@ char *_strstr(char *haystack, char *needle)
 	haystack++;
 	}
 
-	return (NULL);
+	return (0);
 }
