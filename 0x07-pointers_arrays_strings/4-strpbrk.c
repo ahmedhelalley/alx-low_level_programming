@@ -7,10 +7,6 @@
 */
 char *_strpbrk(char *s, char *accept)
 	{
-	if (s == NULL || accept == NULL)
-	{
-	return (NULL);
-	}
 	char *s_ptr;
 	char *accept_ptr;
 
