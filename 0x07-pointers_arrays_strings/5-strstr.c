@@ -1,25 +1,42 @@
 #included "main.h"
 /**
- * *_strpbrk - sln hsz oihsz iohxc oic zxvoihh
+ * *_strstr - sln hsz oihsz iohxc oic zxvoihh
  * @haystack: lksdn lxvkc jiocjv oicjvio
  * @needle: lksn xcvn nv vn jh
  * Return: pointer
 */
-char *_strpbrk(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 	{
-	char *s_ptr;
-	char *accept_ptr;
-
-	for (s_ptr = haystack; *s_ptr != '\0'; s_ptr++)
+	if (haystack == NULL || needle == NULL)
 	{
-	for (accept_ptr = needle; *accept_ptr != '\0'; accept_ptr++)
-	{
-	if (*s_ptr == *accept_ptr)
-	{
-	return (s_ptr);
-	}
-	}
+	return (NULL);
 	}
 
-	return (0);
+	char *h, *n;
+
+	if (*needle == '\0')
+	{
+	return (haystack);
+	}
+
+	while (*haystack)
+	{
+	h = haystack;
+	n = needle;
+
+	while (*n && *h == *n)
+	{
+		h++;
+		n++;
+	}
+
+	if (*n == '\0')
+	{
+	return (haystack);
+	}
+
+	haystack++;
+	}
+
+	return (NULL);
 }
