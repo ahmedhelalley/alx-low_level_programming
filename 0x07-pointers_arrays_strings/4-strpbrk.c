@@ -6,24 +6,24 @@
  * Return: pointer p
 */
 char *_strpbrk(char *s, char *accept)
-{
-	int i, j;
-	char *p;
-
-	i = 0;
-	while (s[i] != '\0')
 	{
-		j = 0;
-		while (accept[j] != '\0')
-		{
-			if (accept[j] == s[i])
-			{
-				p = &s[i];
-				return (p);
-			}
-			j++;
-		}
-		i++;
+	if (s == NULL || accept == NULL)
+	{
+	return (NULL);
 	}
-	return (0);
+	char *s_ptr;
+	char *accept_ptr;
+
+	for (s_ptr = s; *s_ptr != '\0'; s_ptr++)
+	{
+	for (accept_ptr = accept; *accept_ptr != '\0'; accept_ptr++)
+	{
+	if (*s_ptr == *accept_ptr)
+	{
+	return (s_ptr);
+	}
+	}
+	}
+
+	return (NULL);
 }
