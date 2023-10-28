@@ -1,4 +1,4 @@
-#inlude < stdio.h >
+#include <stdio.h>
 /**
  * main - idjsf oihwd foid dsf ihdf
  * @argc: lkwdjf jdf jf jdsifjcods
