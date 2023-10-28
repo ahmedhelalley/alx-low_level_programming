@@ -6,7 +6,7 @@
  * @argv: values
  * Return: 0 on success
 */
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 	int sum = 0;
 	char *c;
@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
 	{
 		for (c = argv[argc]; *c; c++)
 		{
-			if (c < '0' || c > '9')
+			if (*c < '0' || *c > '9')
 				return (printf("Error\n"), 1);
 		}
 		sum += atoi(argv[argc]);
