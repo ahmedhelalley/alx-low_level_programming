@@ -8,12 +8,17 @@
 */
 char **strtow(char *str)
 {
+int wordCount = 1;
+int i;
+char **words;
+char *token;
+int wordIndex = 0;
+
 if (str == NULL || str[0] == '\0')
 {
 return (NULL);
 }
-int wordCount = 1;
-for (int i = 0; str[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
 if (str[i] == ' ')
 {
@@ -24,19 +29,18 @@ i++;
 }
 }
 }
-char **words = (char **)malloc((wordCount + 1) * sizeof(char *));
+words = (char **)malloc((wordCount + 1) * sizeof(char *));
 if (words == NULL)
 {
 return (NULL);
 }
-char *token = strtok(str, " ");
-int wordIndex = 0;
+token = strtok(str, " ");
 while (token != NULL)
 {
 words[wordIndex] = (char *)malloc(strlen(token) + 1);
 if (words[wordIndex] == NULL)
 {
-for (int i = 0; i < wordIndex; i++)
+for (i = 0; i < wordIndex; i++)
 {
 free(words[i]);
 }
