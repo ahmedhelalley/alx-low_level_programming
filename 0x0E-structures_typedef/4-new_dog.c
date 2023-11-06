@@ -1,5 +1,5 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 /**
  * _strlen - jdsh ihdiucvh ishdi sfcv
  * @str: string
