@@ -1,4 +1,4 @@
-#include "main.h"
+#include "function_pointers.h"
 /**
  * print_name - odsknaf iusdb suvubsivc
  * @name: sldkf lksvk ndsnfvk ndfv
