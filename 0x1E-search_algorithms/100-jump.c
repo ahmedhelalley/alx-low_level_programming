@@ -2,10 +2,10 @@
 
 /**
  * jump_search - Jump search algorithm
- * @array: pointer to the first element of the array to search in
- * @size: number of elements in array
- * @value: value to search for
- * Return: first index where value is located,
+ * @array: the pointer to the first element of the array to search in
+ * @size: the number of elements in array
+ * @value: the value to search for
+ * Return: the first index where value is located,
  *				 -1 if the value doesn't presented on the array
  */
 int jump_search(int *array, size_t size, int value)
@@ -34,11 +34,11 @@ int jump_search(int *array, size_t size, int value)
 
 /**
  * linear_search_for_jump - linear search for jump algorithm
- * @array: array to be sorted
- * @start: start index
- * @end: end index
- * @value: value to be searched for
- * Return: first index where value is located,
+ * @array: the array to be sorted
+ * @start: the start index
+ * @end: the end index
+ * @value: the value to be searched for
+ * Return: the first index where value is located,
  *				 -1 if the value doesn't presented on the array
 */
 int linear_search_for_jump(int *array, size_t start, size_t end, int value)

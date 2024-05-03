@@ -2,9 +2,9 @@
 
 /**
  * linear_skip - searches for a value in a sorted skip list of integers
- * @list: pointer to the head of the list to search in
- * @value: value to search for
- * Return: pointer to the first node where value is located,
+ * @list: the pointer to the head of the list to search in
+ * @value: the value to search for
+ * Return: the pointer to the first node where value is located,
  * or NULL if not found
  */
 skiplist_t *linear_skip(skiplist_t *list, int value)
@@ -35,10 +35,10 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 
 /**
  * search_skiplist - searches for a value in a sorted list of integers
- * @start: pointer to the head of the list to search in
- * @end: pointer to the end of the list to search in
- * @value: value to search for
- * Return: pointer to the first node where value is located,
+ * @start: the pointer to the head of the list to search in
+ * @end: the pointer to the end of the list to search in
+ * @value: the value to search for
+ * Return: the pointer to the first node where value is located,
  */
 skiplist_t *search_skiplist(skiplist_t *start, skiplist_t *end, int value)
 {

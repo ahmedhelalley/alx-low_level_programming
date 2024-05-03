@@ -2,10 +2,10 @@
 
 /**
  * exponential_search - EXponential search algorithm
- * @array: pointer to the first element of the array to search in
- * @size: number of elements in array
- * @value: value to search for
- * Return: first index where value is located,
+ * @array: the pointer to the first element of the array to search in
+ * @size: the number of elements in array
+ * @value: the value to search for
+ * Return: the first index where value is located,
  *				 -1 if the value doesn't presented on the array
 */
 int exponential_search(int *array, size_t size, int value)
@@ -32,9 +32,9 @@ int exponential_search(int *array, size_t size, int value)
 
 /**
  * min - Find the mininum of two numbers
- * @first_num: first number
- * @second_num: second number
- * Return: the smallest one in value
+ * @first_num: the first number
+ * @second_num: the second number
+ * Return: smallest one in value
 */
 int min(int first_num, int second_num)
 {
@@ -46,11 +46,11 @@ int min(int first_num, int second_num)
 
 /**
  * binary_search_for_exponenial - Binary search algorithm
- * @array: pointer to the first element of the array to search in
- * @low: low index
- * @high: high index
- * @value: value to search for
- * Return: first index where value is located,
+ * @array: the pointer to the first element of the array to search in
+ * @low: the low index
+ * @high: the high index
+ * @value: the value to search for
+ * Return: the first index where value is located,
  *				 -1 if the value doesn't presented on the array
 */
 int binary_search_for_exponenial(int *array, int low, int high, int value)
@@ -79,9 +79,9 @@ int binary_search_for_exponenial(int *array, int low, int high, int value)
 
 /**
  * print_array - Prints the array elements
- * @array: array to be printed
- * @start: start index
- * @end: end index
+ * @array: the array to be printed
+ * @start: the start index
+ * @end: the end index
 */
 void print_array(int *array, int start, int end)
 {

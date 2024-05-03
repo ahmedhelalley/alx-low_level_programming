@@ -2,10 +2,10 @@
 
 /**
  * advanced_binary - Recursive binary search algorithm
- * @array: pointer to the first element of the array to search in
- * @size: number of elements in array
- * @value: value to search for
- * Return: first index where value is located,
+ * @array: the pointer to the first element of the array to search in
+ * @size: the number of elements in array
+ * @value: the value to search for
+ * Return: the first index where value is located,
  *				 -1 if the value doesn't presented on the array
 */
 int advanced_binary(int *array, size_t size, int value)
@@ -20,11 +20,11 @@ int advanced_binary(int *array, size_t size, int value)
 
 /**
  * binary_search_recursive - Recursive binary search algorithm
- * @array: pointer to the first element of the array to search in
- * @low: low index
- * @high: high index
- * @value: value to search for
- * Return: first index where value is located,
+ * @array: the pointer to the first element of the array to search in
+ * @low: the low index
+ * @high: the high index
+ * @value: the value to search for
+ * Return: the first index where value is located,
  *				 -1 if the value doesn't presented on the array
 */
 int binary_search_recursive(int *array, int low, int high, int value)
@@ -50,9 +50,9 @@ int binary_search_recursive(int *array, int low, int high, int value)
 
 /**
  * print_array - Prints the array elements
- * @array: array to be printed
- * @start: start index
- * @end: end index
+ * @array: the array to be printed
+ * @start: the start index
+ * @end: the end index
 */
 void print_array(int *array, int start, int end)
 {

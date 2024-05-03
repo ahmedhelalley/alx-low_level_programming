@@ -3,10 +3,10 @@
 
 /**
  * jump_list - searches for a value in a sorted list of integers
- * @list: pointer to the head of the list to search in
- * @size: number of nodes in the list
- * @value: value to search for
- * Return: pointer to the first node where value is located,
+ * @list: the pointer to the head of the list to search in
+ * @size: the number of nodes in the list
+ * @value: the value to search for
+ * Return: the pointer to the first node where value is located,
  * or NULL if not found
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
@@ -42,10 +42,10 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 
 /**
  * search_list - searches for a value in a sorted list of integers
- * @start: pointer to the head of the list to search in
- * @end: pointer to the end of the list to search in
- * @value: value to search for
- * Return: pointer to the first node where value is located,
+ * @start: the pointer to the head of the list to search in
+ * @end: the pointer to the end of the list to search in
+ * @value: the value to search for
+ * Return: the pointer to the first node where value is located,
  */
 listint_t *search_list(listint_t *start, listint_t *end, int value)
 {
